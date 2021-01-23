@@ -2,33 +2,45 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  color:dimgray;
+  color:#8a233e;
+  font-family: 'Lato', sans-serif;
 }
 
 a {
     text-decoration: none;
     display: flex;
     align-items: center;
-    color: dimgray;
+    color: #8a233e;
     border-radius: 1rem;
     margin: 1rem 0;
+    font-weight: bolder;
+    justify-content: center;
+    width: 50%;
 }
 
-a:hover {
-    background: linear-gradient(to left bottom, #65dfc9, #6cdbeb);
+a button {
+    width: 100%;
+    margin: .5rem 0 0 0;
+    border-radius: 0.2rem;
+    border-style: none;
+    padding: 0.3rem;
+}
+
+.media_links:hover {
+    background: linear-gradient(to left bottom, #5e2121, #f78292);
+    color: white;
 }
 
 main {
     min-height: 100vh;
-    background: linear-gradient(to right top, #65dfc9, #6cdbeb);
+    background: linear-gradient(to right top,  #5e2121, #f78292);
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
 .glass_bg {
-    background: white;
-    min-height: 80vh;
+    margin: 2rem 0;
     width: 80%;
     background: linear-gradient(to right bottom, rgba(255,255,255,0.5),rgba(255,255,255,0.6));
     border-radius: 1.5rem;
@@ -37,7 +49,7 @@ main {
 
 .profile_side {
   background-color: white;
-  min-width: 30%;
+  flex: 2;
   border-top-left-radius: 1.5rem;
   border-bottom-left-radius: 1.5rem;
   display: flex;
@@ -45,15 +57,24 @@ main {
   align-items: center;
   justify-content: space-evenly;
   text-align: center;
+
 }
 
 .content_side {
     display: flex;
-    min-width: 60%;
+    flex: 4;
+    align-items: center;
+    height: 90%;
+}
+
+.content_side h2,
+.content_side p,
+.content_side div {
+    text-align: center;
 }
 
 .profile_content {
-    margin: 2rem 1rem 1rem 1rem;
+    margin: 1rem 1rem 1rem 1rem;
 }
 
 .profile_pic {
@@ -65,6 +86,7 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
 }
 
 .media_icons {
@@ -75,4 +97,72 @@ main {
 .email_icon {
     width: 3rem;
 
+}
+
+.more_link:hover {
+    text-decoration: underline;
+}
+
+.projects_container {
+    display: flex;
+    margin: 1rem 0;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.projects {
+    display: flex;
+    justify-content: space-evenly;
+    width: 75%;
+    margin: 3rem 3rem;
+    padding: 2rem 1rem;
+    border-radius: 1rem;
+    background: linear-gradient(to right bottom, rgba(255,255,255,0.4),rgba(255,255,255,0.2));
+}
+
+.project_pic {
+    border-radius: 0.6rem;
+    width: 7rem;
+    height: 5rem;
+}
+
+.project_desc {
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.skill_set {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 4rem;
+}
+
+.skill_images {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.skill_text {
+    font-size: 1.5rem;
+}
+
+.skills_icons {
+    width: 4rem;
+    height: 4rem;
+    margin: 2rem 1rem;
+}
+
+.h100 {
+    display: flex;
+    align-items: center;
+}
+
+.project_desc p {
+    width: 80%;
+    margin-top: 1rem;
 }
