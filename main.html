@@ -5,39 +5,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Adan Fernandez Bonilla.</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/styles/main.css">
     <link rel="icon" href="assets/images/top_icon.png">
 </head>
 <body>
-    <main>
-        <div class="profile_content_tab">
-            <p>CONTACT INFO</p>
-        </div>
-        <div class="glass_bg">
-            <div class="profile_side">
-                <div class="profile_content">
+    <main class="d-flex flex-column flex-md-column flex-xl-row justify-content-center align-items-center h-100">
+        <nav class="w-100 d-flex d-md-flex d-xl-none align-items-center justify-content-center h-25">
+          <ul class="w-100 d-flex d-sm-flex d-md-flex d-lg-none d-xl-none align-items-center justify-content-around text-center list-unstyled my-0">
+            <li><a href="#">Contact Info</a></li>
+            <li><a href="#">About Me</a></li>
+            <li><a href="assets/docs/Adan_Fernandez_Resume.pdf" download>Download CV</a></li>
+          </ul>
+        </nav>
+        <div class="glass_bg d-flex">
+            <div class="border_mine bg-light d-none d-sm-none d-md-none d-lg-flex d-xl-flex flex-column text-center justify-content-start">
+                <div class="profile_content mt-5 pt-5">
                     <img src="assets/images/profile_pic.png" alt="profile picture" class="profile_pic">
                     <h1>Adan Fernandez</h1>
                     <h4>full-stack developer</h4>
                     <p>adaferbon03@gmail.com</p>
-                    <div class="media_div">
-                        <a href="https://github.com/balerum03" target="_blank" class="media_links"><img src="assets/images/Octocat.png" alt="Github cat" class="media_icons"><p>balerum03</p></a>
-                        <a href="https://www.linkedin.com/in/adan-fernandez-bonilla/" target="_blank" class="media_links"><img src="assets/images/LI-In-Bug.png" alt="LinkIn logo" class="media_icons"><p>Adan Fernandez</p></a>
-                        <a href="https://twitter.com/balerum03" target="_blank" class="media_links"><img src="assets/images/Twitter_Logo_Blue.png" alt="Twitter logo" class="media_icons"><p>balerum03</p></a>
+                    <div class="media_div d-flex flex-column justify-content-center align-items-center">
+                        <a href="https://github.com/balerum03" target="_blank" class="media_links d-flex justify-content-around align-items-center align-items-center w-50"><img src="assets/images/Octocat.png" alt="Github cat" class="media_icons"><p>balerum03</p></a>
+                        <a href="https://www.linkedin.com/in/adan-fernandez-bonilla/" target="_blank" class="media_links d-flex justify-content-around align-items-center w-50"><img src="assets/images/LI-In-Bug.png" alt="LinkIn logo" class="media_icons"><p>Adan Fernandez</p></a>
+                        <a href="https://twitter.com/balerum03" target="_blank" class="media_links d-flex justify-content-around align-items-center w-50"><img src="assets/images/Twitter_Logo_Blue.png" alt="Twitter logo" class="media_icons"><p>balerum03</p></a>
                     </div>
-                    <div class="skill_set">
+                    <div class="skill_set d-flex flex-column w-100">
                         <h5 class="skill_text">Skills</h5>
-                        <div class="skill_images">
+                        <div>
                             <img src="assets/images/ruby.png" alt="ruby logo" class="skills_icons">
                             <img src="assets/images/JavaScript-logo.png" alt="JS logo" class="skills_icons">
                             <img src="assets/images/rails-logo.png" alt="rails logo" class="skills_icons">
                             <img src="assets/images/iconfinder_React.js_logo_1174949.png" alt="react logo" class="skills_icons">
                         </div>
                     </div>
-                    <div class="w100">
+                    <div class="w-100 d-flex justify-content-center mt-3">
                         <div class="download_CV">
-                            <a href="assets/docs/Adan Fernandez Resume.pdf" download>
+                            <a href="assets/docs/Adan_Fernandez_Resume.pdf" download class="d-flex justify-content-center align-items-center h-100 w-100">
                                 <img src="assets/images/document_icon.png" alt="document icon" class="CV_image">
                                 <p>Download CV</p>
                             </a>
@@ -46,55 +51,50 @@
                 </div>
             </div>
             <div class="content_side">
-                
                 <div class="projects_container">
-                    <div class="profile_in_tab">
-                        <h2>Adan Fernandez</h2>
-                        <h5>full-stack developer</h5>
-                        <div class="skill_images-tap">
-                            <img src="assets/images/ruby.png" alt="ruby logo" class="skills_icons-tap">
-                            <img src="assets/images/JavaScript-logo.png" alt="JS logo" class="skills_icons-tap">
-                            <img src="assets/images/rails-logo.png" alt="rails logo" class="skills_icons-tap">
-                            <img src="assets/images/iconfinder_React.js_logo_1174949.png" alt="react logo" class="skills_icons-tap">
-                        </div>
+                    <div class="d-block d-sm-block d-md-block d-lg-none d-xl-none">
+                      <img src="assets/images/profile_pic.png" alt="profile picture" class="profile_pic">
+                      <h1>Adan Fernandez</h1>
+                      <h4>full-stack developer</h4>
+                      <p>adaferbon03@gmail.com</p>
+                      <div>
+                          <img src="assets/images/ruby.png" alt="ruby logo" class="skills_icons h-auto">
+                          <img src="assets/images/JavaScript-logo.png" alt="JS logo" class="skills_icons h-auto">
+                          <img src="assets/images/rails-logo.png" alt="rails logo" class="skills_icons h-auto">
+                          <img src="assets/images/iconfinder_React.js_logo_1174949.png" alt="react logo" class="skills_icons h-auto">
+                      </div>
                     </div>
-                    <h4>Some of my own projects</h4>
+                    <h2>Some of my own projects</h2>
                     <div class="projects">
-                        <div class="h100">
-                            <img src="assets/images/Ruby.png" alt="project pic" class="project_pic">
-                        </div>
                         <div class="project_desc">
+                            <img src="assets/images/Ruby.png" alt="project pic" class="project_pic h-auto w-25 mb-2">
                             <h3>Simple linter</h3>
                             <h5>Ruby, Rspect, Rubocop</h5>
                             <p>Simple linter that verifies that all square brackets, curly brackets, and parenthesis are correctly closed.</p>
                             <a href="https://github.com/balerum03/linter_capstone" target="_blank"><button>See project on GitHub</button></a>
                         </div>
-                        
+
                     </div>
                     <div class="projects">
-                        <div class="h100">
-                            <img src="assets/images/slackbotimg.png" alt="project pic" class="project_pic">
-                        </div>
                         <div class="project_desc">
+                            <img src="assets/images/slackbotimg.png" alt="project pic" class="project_pic h-auto w-25 mb-2">
                             <h3>Slack bot on Rails</h3>
                             <h5>Slack-API, Ruby, Ruby on Rails, PostgreSQL</h5>
                             <p>This slack bot responds to you when asking for the result of a simple sum or if a number is prime or not, in case a number is prime it'll respond with an array of all the prime numbers before the given prime number.</p>
                             <a href="https://github.com/balerum03/slack_bot_rails" target="_blank"><button>See project on GitHub</button></a>
                         </div>
-                        
+
                     </div>
                     <div class="projects">
-                        <div class="h100">
-                            <img src="assets/images/list.png" alt="project pic" class="project_pic">
-                        </div>
                         <div class="project_desc">
+                            <img src="assets/images/list.png" alt="project pic" class="project_pic h-50 w-25 mb-2">
                             <h3>Group our transactions</h3>
                             <h5>Ruby, Ruby on Rails, PostgreSQL, Rspect, HTML, CSS</h5>
                             <p>In this app, you can create an account or log-in once into the app, you can create different groups and add items to those groups.
                                 The overall goal of the app is to have a list of items ordered in groups, in case you need it in the future like a to-buy list.</p>
                             <a href="https://github.com/balerum03/Groups_capstone" target="_balnk"><button>See project on GitHub</button></a>
                         </div>
-                        
+
                     </div>
                     <a href="https://github.com/balerum03" target="_blank" class="more_link">Visit my GitHub page to see all my projects ></a>
                 </div>
