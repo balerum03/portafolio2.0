@@ -11,14 +11,22 @@
     <link rel="icon" href="assets/images/top_icon.png">
 </head>
 <body>
-    <main class="d-flex flex-column flex-md-column flex-xl-row justify-content-center align-items-center h-100">
+    <main class="d-flex flex-column flex-md-column flex-xl-row justify-content-center align-items-center h-100 w-100">
         <nav class="w-100 d-flex d-md-flex d-xl-none align-items-center justify-content-center h-25">
           <ul class="w-100 d-flex d-sm-flex d-md-flex d-lg-none d-xl-none align-items-center justify-content-around text-center list-unstyled my-0">
-            <li><a href="#">Contact Info</a></li>
-            <li><a href="#">About Me</a></li>
-            <li><a href="assets/docs/Adan_Fernandez_Resume.pdf" download>Download CV</a></li>
+            <li><p class="to_active_modal">Social Media Links</p></li>
+            <li><a href="assets/docs/Adan_Fernandez_Resume.pdf" download>Click to download my CV</a></li>
           </ul>
         </nav>
+        <div class="contact_modal_container w-100 d-flex justify-content-center align-items-center">
+          <div class="contact_modal_content bg-light w-50 d-flex flex-column align-items-center justify-content-around h-25">
+            <h5 class="w-75 text-center pb-2">Media Info</h5>
+            <a href="https://github.com/balerum03" target="_blank" class="modal_links d-flex justify-content-around align-items-center align-items-center w-50 py-1"><img src="assets/images/Octocat.png" alt="Github cat" class="media_icons"><p>balerum03</p></a>
+            <a href="https://www.linkedin.com/in/adan-fernandez-bonilla/" target="_blank" class="modal_links d-flex justify-content-around align-items-center w-50 py-1"><img src="assets/images/LI-In-Bug.png" alt="LinkIn logo" class="media_icons"><p>LinkedIn</p></a>
+            <a href="https://twitter.com/balerum03" target="_blank" class="modal_links d-flex justify-content-around align-items-center w-50 py-1"><img src="assets/images/Twitter_Logo_Blue.png" alt="Twitter logo" class="media_icons"><p>balerum03</p></a>
+            <button class="close_modal btn mb-2">Close</button>
+          </div>
+        </div>
         <div class="glass_bg d-flex">
             <div class="border_mine bg-light d-none d-sm-none d-md-none d-lg-flex d-xl-flex flex-column text-center justify-content-start">
                 <div class="profile_content mt-5 pt-5">
@@ -51,7 +59,7 @@
                 </div>
             </div>
             <div class="content_side">
-                <div class="projects_container">
+                <div class="projects_container d-flex flex-column justify-content-center align-items-center w-100">
                     <div class="d-block d-sm-block d-md-block d-lg-none d-xl-none">
                       <img src="assets/images/profile_pic.png" alt="profile picture" class="profile_pic">
                       <h1>Adan Fernandez</h1>
@@ -66,7 +74,7 @@
                     </div>
                     <h2>Some of my own projects</h2>
                     <div class="projects">
-                        <div class="project_desc">
+                        <div class="project_desc d-flex flex-column align-items-center">
                             <img src="assets/images/Ruby.png" alt="project pic" class="project_pic h-auto w-25 mb-2">
                             <h3>Simple linter</h3>
                             <h5>Ruby, Rspect, Rubocop</h5>
@@ -76,7 +84,7 @@
 
                     </div>
                     <div class="projects">
-                        <div class="project_desc">
+                        <div class="project_desc d-flex flex-column align-items-center">
                             <img src="assets/images/slackbotimg.png" alt="project pic" class="project_pic h-auto w-25 mb-2">
                             <h3>Slack bot on Rails</h3>
                             <h5>Slack-API, Ruby, Ruby on Rails, PostgreSQL</h5>
@@ -86,7 +94,7 @@
 
                     </div>
                     <div class="projects">
-                        <div class="project_desc">
+                        <div class="project_desc d-flex flex-column align-items-center">
                             <img src="assets/images/list.png" alt="project pic" class="project_pic h-50 w-25 mb-2">
                             <h3>Group our transactions</h3>
                             <h5>Ruby, Ruby on Rails, PostgreSQL, Rspect, HTML, CSS</h5>
@@ -101,5 +109,6 @@
             </div>
         </div>
     </main>
+    <script type="text/javascript" src="main.js"></script>
 </body>
 </html>
