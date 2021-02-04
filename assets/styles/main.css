@@ -26,10 +26,14 @@ a button {
     border-radius: 0.5rem;
 }
 
-.media_links:hover,
+.media_links:hover {
+  border-bottom: solid #605b81;
+  border-radius: 0;
+}
+
 a button:hover {
-    background: linear-gradient(to left bottom, #605b81, #8d7bf7);
-    color: white;
+  background-color: #8d7bf7;
+  color: white;
 }
 
 main {
@@ -68,7 +72,9 @@ main {
 }
 
 .profile_content {
-  height: 100%;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 12px;
 }
 
 .profile_pic {
@@ -108,7 +114,7 @@ main {
 }
 
 .project_pic {
-    width: 100%;
+    width: 40%;
 }
 
 .project_desc {
@@ -221,6 +227,10 @@ li p {
       margin: 2rem 1rem;
       padding: 1rem 1rem;
     }
+
+    .project_pic {
+      width: 75%;
+    }
 }
 
 @media screen and (max-width: 720px) {
@@ -231,5 +241,9 @@ li p {
 
   .projects h3 {
     margin-top: 0.5rem;
+  }
+
+  .project_pic {
+    width: 80%;
   }
 }
